@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://phpdb-basic-sample.herokuapp.com/read.php -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一覧</title>
+    <link rel="stylesheet" href="./商品一覧_files/style.css">
+
+    <!-- Google Fontsの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./商品一覧_files/css2" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="file:///C:/Users/nagatomoyuji/Desktop/portfolio/%E5%95%86%E5%93%81%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA.html">商品管理アプリ</a>
+        </nav>
+    </header>
+    <main>
+        <article class="products">
+            <h1>商品一覧</h1>
+                        <div class="products-ui">
+                <div>
+                    <a href="https://phpdb-basic-sample.herokuapp.com/read.php?order=desc&amp;keyword=">
+                        <img src="./商品一覧_files/desc.png" alt="降順に並び替え" class="sort-img">
+                    </a>
+                    <a href="https://phpdb-basic-sample.herokuapp.com/read.php?order=asc&amp;keyword=">
+                        <img src="./商品一覧_files/asc.png" alt="昇順に並び替え" class="sort-img">
+                    </a>
+                    <form action="https://phpdb-basic-sample.herokuapp.com/read.php" method="get" class="search-form">
+                        <input type="hidden" name="order" value="">
+                        <input type="text" class="search-box" placeholder="商品名で検索" name="keyword" value="">
+                    </form>
+                </div>
+                <a href="https://phpdb-basic-sample.herokuapp.com/create.php" class="btn">商品登録</a>
+            </div>
+            <table class="products-table">
+                <tbody><tr>
+                    <th>商品コード</th>
+                    <th>商品名</th>
+                    <th>単価</th>
+                    <th>在庫数</th>
+                    <th>仕入先コード</th>
+                    <th>編集</th>
+                    <th>削除</th>
+                </tr>
+                
+                        <tr>
+                        <td>1</td>
+                        <td>a</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>4444</td>
+                        <td><a href="https://phpdb-basic-sample.herokuapp.com/update.php?id=654"><img src="./商品一覧_files/edit.png" alt="編集" class="edit-icon"></a></td>
+                        <td><a href="https://phpdb-basic-sample.herokuapp.com/delete.php?id=654"><img src="./商品一覧_files/delete.png" alt="削除" class="delete-icon"></a></td>                        
+                        </tr>                    
+                    
+                        <tr>
+                        <td>222</td>
+                        <td>2222</td>
+                        <td>2222</td>
+                        <td>2222</td>
+                        <td>2222</td>
+                        <td><a href="https://phpdb-basic-sample.herokuapp.com/update.php?id=674"><img src="./商品一覧_files/edit.png" alt="編集" class="edit-icon"></a></td>
+                        <td><a href="https://phpdb-basic-sample.herokuapp.com/delete.php?id=674"><img src="./商品一覧_files/delete.png" alt="削除" class="delete-icon"></a></td>                        
+                        </tr>                    
+                                </tbody></table>
+        </article>
+    </main>
+    <footer>
+        <p class="copyright">© 商品管理アプリ All rights reserved.</p>
+    </footer>
+
+
+</body></html>
